@@ -1,5 +1,6 @@
 {
   "name": "foundry-skills",
+  "description": "Protein design skills for running Foundry tools (RFdiffusion3, RosettaFold3, ProteinMPNN, Enhanced MPNN) on Vast.ai GPU instances",
   "owner": {
     "name": "LiorZ"
   },

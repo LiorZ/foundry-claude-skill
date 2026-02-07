@@ -33,33 +33,17 @@ Each skill launches a Vast.ai GPU instance with the Foundry Docker image, upload
 
 ## Installation
 
-### Option 1: Install from a local path (for development)
+### Option 1: Install from GitHub (recommended)
 
-Launch Claude Code with the `--plugin-dir` flag pointing to this repo:
-
-```bash
-claude --plugin-dir /path/to/foundry-claude-skill
-```
-
-This loads all skills for that session. Useful for testing and development.
-
-### Option 2: Install via marketplace (recommended for regular use)
-
-**Step 1 — Add this repo as a marketplace.**
+**Step 1 — Add the marketplace.**
 
 From within Claude Code, run:
 
 ```
-/plugin marketplace add /path/to/foundry-claude-skill
+/plugin marketplace add LiorZ/foundry-claude-skill
 ```
 
-Or if hosted on GitHub:
-
-```
-/plugin marketplace add your-org/foundry-claude-skill
-```
-
-**Step 2 — Install the plugin from the marketplace.**
+**Step 2 — Install the plugin.**
 
 ```
 /plugin install foundry@foundry-skills
@@ -76,6 +60,24 @@ To make the plugin available for everyone working in a specific project:
 ```
 
 This writes the configuration to `.claude/settings.json` which can be committed to your repo.
+
+### Option 2: Install from a local path (for development)
+
+Launch Claude Code with the `--plugin-dir` flag pointing to a local clone:
+
+```bash
+git clone git@github.com:LiorZ/foundry-claude-skill.git
+claude --plugin-dir ./foundry-claude-skill
+```
+
+This loads all skills for that session. Useful for testing and development.
+
+Alternatively, add a local clone as a marketplace:
+
+```
+/plugin marketplace add /path/to/foundry-claude-skill
+/plugin install foundry@foundry-skills
+```
 
 ### Option 3: Manual configuration
 
