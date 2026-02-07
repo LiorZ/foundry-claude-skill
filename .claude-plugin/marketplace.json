@@ -1,0 +1,13 @@
+{
+  "name": "foundry-skills",
+  "owner": {
+    "name": "LiorZ"
+  },
+  "plugins": [
+    {
+      "name": "foundry",
+      "source": "./",
+      "description": "Run Foundry protein design tools (RFdiffusion3, RosettaFold3, ProteinMPNN/LigandMPNN) on Vast.ai GPU instances"
+    }
+  ]
+}

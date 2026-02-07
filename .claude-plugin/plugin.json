@@ -1,0 +1,9 @@
+{
+  "name": "foundry",
+  "version": "1.0.0",
+  "description": "Run Foundry protein design tools (RFdiffusion3, RosettaFold3, ProteinMPNN/LigandMPNN) on Vast.ai GPU instances",
+  "author": {
+    "name": "Lior"
+  },
+  "skills": "./skills/"
+}
